@@ -2,13 +2,12 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 20px;
   position: fixed;
 }
 
 .navbar-content {
   width: 20%;
-  padding: 10px;
+  padding: 1.5em;
   position: fixed;
   top: 0;
   right: 0;
@@ -20,19 +19,15 @@
 }
 
 .toggle-button {
-  background-color: #33333311;
+  background-color: #00000000;
+  border-radius: 36px;
   color: white;
   border: none;
-  padding: 4.3vh;
   cursor: pointer;
   float: right;
   position: fixed;
-  top: 0;
-  right: 0;
-}
-
-.toggle-button:hover {
-  background-color: #555;
+  top: 3em;
+  right: 3em;
 }
 
 .navbar-list {
@@ -58,4 +53,6 @@
 .navbar-item a:hover {
   text-decoration: underline;
   background-color: transparent;
+}
+.logo {
 }

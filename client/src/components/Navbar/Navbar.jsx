@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import logoOpen from "../../assets/menuopen_logo.png";
+import logoClosed from "../../assets/menuclose_logo.png";
 
 function Navbar() {
   const [isNavbarVisible, setIsNavbarVisible] = useState(false);
@@ -16,26 +18,39 @@ function Navbar() {
           <ul className="navbar-list">
             <div className="navbar-content">
               <li className="navbar-item">
-                <Link to="/">HOME</Link>
+                <Link to="/" onClick={toggleNavbar}>
+                  HOME
+                </Link>
               </li>
               <li className="navbar-item">
-                <Link to="/about">ABOUT</Link>
+                <Link to="/about" onClick={toggleNavbar}>
+                  ABOUT
+                </Link>
               </li>
               <li className="navbar-item">
-                <Link to="/projects">PROJECTS</Link>
+                <Link to="/projects" onClick={toggleNavbar}>
+                  PROJECTS
+                </Link>
               </li>
               <li className="navbar-item">
-                <Link to="/careers">CAREERS</Link>
+                <Link to="/careers" onClick={toggleNavbar}>
+                  CAREERS
+                </Link>
               </li>
               <li className="navbar-item">
-                <Link to="/contact">CONTACT</Link>
+                <Link to="/contact" onClick={toggleNavbar}>
+                  CONTACT
+                </Link>
               </li>
-              <br />
               <br />
             </div>
             <li className="navbar-item">
               <button className="toggle-button" onClick={toggleNavbar}>
-                Toggle Navbar
+                <img
+                  className="logo"
+                  src={isNavbarVisible ? logoClosed : logoOpen}
+                  alt="Logo"
+                />
               </button>
             </li>
           </ul>
@@ -43,7 +58,11 @@ function Navbar() {
       )}
       {!isNavbarVisible && (
         <button className="toggle-button" onClick={toggleNavbar}>
-          Toggle Navbar
+          <img
+            className="logo"
+            src={isNavbarVisible ? logoClosed : logoOpen}
+            alt="Logo"
+          />
         </button>
       )}
     </div>
