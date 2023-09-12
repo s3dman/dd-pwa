@@ -14,25 +14,29 @@ function Navbar() {
       {isNavbarVisible && (
         <nav className="navbar">
           <ul className="navbar-list">
+            <div className="navbar-content">
+              <li className="navbar-item">
+                <Link to="/">HOME</Link>
+              </li>
+              <li className="navbar-item">
+                <Link to="/about">ABOUT</Link>
+              </li>
+              <li className="navbar-item">
+                <Link to="/projects">PROJECTS</Link>
+              </li>
+              <li className="navbar-item">
+                <Link to="/careers">CAREERS</Link>
+              </li>
+              <li className="navbar-item">
+                <Link to="/contact">CONTACT</Link>
+              </li>
+              <br />
+              <br />
+            </div>
             <li className="navbar-item">
               <button className="toggle-button" onClick={toggleNavbar}>
                 Toggle Navbar
               </button>
-            </li>
-            <li className="navbar-item">
-              <Link to="/">HOME</Link>
-            </li>
-            <li className="navbar-item">
-              <Link to="/about">ABOUT</Link>
-            </li>
-            <li className="navbar-item">
-              <Link to="/projects">PROJECTS</Link>
-            </li>
-            <li className="navbar-item">
-              <Link to="/careers">CAREERS</Link>
-            </li>
-            <li className="navbar-item">
-              <Link to="/contact">CONTACT</Link>
             </li>
           </ul>
         </nav>

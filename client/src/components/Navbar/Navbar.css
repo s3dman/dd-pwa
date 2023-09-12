@@ -1,40 +1,45 @@
-/* Navbar.css */
 .navbar-container {
   display: flex;
-  justify-content: flex-end; /* Align the button to the right */
-  align-items: center; /* Vertically center the button */
-  margin-right: 20px; /* Add margin for spacing */
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+  position: fixed;
+}
+
+.navbar-content {
+  width: 20%;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(to right, #01579b00, #01579b4d);
 }
 
 .toggle-button {
-  background-color: #333; /* Button background color */
-  color: white; /* Button text color */
+  background-color: #33333311;
+  color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 4.3vh;
   cursor: pointer;
-  float: right; /* Align the button to the right */
+  float: right;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 .toggle-button:hover {
-  background-color: #555; /* Button background color on hover */
-}
-
-.navbar {
-  display: flex;
-  flex-direction: column; /* Display items vertically */
-  align-items: flex-end; /* Align items to the right */
-  background-color: #333; /* Add your desired background color */
-  width: 200px; /* Adjust the width as needed */
-  padding: 10px; /* Add padding as needed */
-  position: fixed; /* Fix the navbar to the right side */
-  top: 0; /* Adjust as needed for top positioning */
-  right: 0; /* Align to the right */
-  height: 100%; /* Make the navbar span the full height of the viewport */
+  background-color: #555;
 }
 
 .navbar-list {
   list-style-type: none;
   padding: 0;
+  text-align: right;
+  line-height: 1;
 }
 
 .navbar-item {
@@ -43,14 +48,14 @@
 }
 
 .navbar-item a {
-  color: white; /* Text color for links */
+  color: white;
   text-decoration: none;
-  display: block; /* Display links as block elements for vertical layout */
-  padding: 10px 20px; /* Adjust padding as needed */
-  transition: text-decoration 0.3s ease; /* Add a smooth transition effect */
+  display: block;
+  padding: 10px 20px;
+  transition: text-decoration 0.3s ease;
 }
 
 .navbar-item a:hover {
-  text-decoration: underline; /* Underline on hover */
-  background-color: transparent; /* Remove background color on hover */
+  text-decoration: underline;
+  background-color: transparent;
 }
