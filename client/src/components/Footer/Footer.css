@@ -61,3 +61,7 @@ footer {
   margin-top: 2em; /* Offset towards the bottom */
   margin-right: 2em; /* Offset to the right */
 }
+
+.social-logo{
+  padding:.25em;
+}
