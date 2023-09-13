@@ -3,7 +3,7 @@ import React from "react";
 function NoPage() {
   return (
     <div className="nopage">
-      <h1>404</h1>
+      <h1>404 not found! :(</h1>
     </div>
   );
 }
