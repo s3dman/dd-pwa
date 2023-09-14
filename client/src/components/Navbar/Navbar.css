@@ -54,3 +54,13 @@
   text-decoration: underline;
   background-color: transparent;
 }
+
+.navbar.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.navbar.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
