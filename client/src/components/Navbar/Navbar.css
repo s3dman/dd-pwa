@@ -5,7 +5,7 @@
   position: fixed;
 }
 
-.navbar-content {
+.navbar {
   width: 20%;
   padding: 1.5em;
   position: fixed;
@@ -63,4 +63,6 @@
 .navbar.fade-out {
   opacity: 0;
   transition: opacity 0.3s;
+  pointer-events: none;
+  user-select: none;
 }
