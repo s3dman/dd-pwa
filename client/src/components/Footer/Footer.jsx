@@ -13,12 +13,16 @@ function Footer() {
           <img src={logo_white} alt="Main Logo" className="mainlogo" />
         </div>
         <div className="footer-section">
-          <h3>CONNECT US</h3>
+          <h3 className="section-header">
+            <hr className="section-hr" /> CONNECT US
+          </h3>
           <p>DESTINATIONDESIGNS.NET.IN</p>
           <p>INFO@DESTINATIONDESIGNS.NET.IN</p>
         </div>
         <div className="footer-section">
-          <h3>STUDIO</h3>
+          <h3 className="section-header">
+            <hr className="section-hr" /> STUDIO
+          </h3>
           <ul>
             <li>
               <Link to="/about">ABOUT</Link>
@@ -35,7 +39,9 @@ function Footer() {
           </ul>
         </div>
         <div className="footer-section">
-          <h3>Address</h3>
+          <h3 className="section-header">
+            <hr className="section-hr" /> Address
+          </h3>
           <p>123 Main Street</p>
           <p>City, State ZIP</p>
         </div>

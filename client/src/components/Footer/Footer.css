@@ -1,40 +1,42 @@
 footer {
-  background-color: #333;
+  background-color: #1e1e1e;
   color: white;
-  padding: 20px 0;
+  padding: 2em;
   text-align: center;
-  font-size: 14px; /* Set the font size for the entire footer */
+  font-size: 14px;
   line-height: 2;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between; /* Equal horizontal spacing between sections */
-  align-items: flex-start; /* Vertically align items at the top */
-  flex-wrap: wrap; /* Allow sections to wrap to the next line on smaller screens */
+  justify-content: space-between;
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .footer-section {
-  flex-basis: calc(
-    25% - 20px
-  ); /* Each section takes up one-fourth of the container width with equal spacing */
-  margin: 10px; /* Add some spacing around each section */
-  text-align: left; /* Adjust text alignment within each section */
-  position: relative; /* Create a relative positioning context */
+  text-align: left;
+  position: relative;
   display: flex;
-  flex-direction: column; /* Stack content vertically within each section */
-  align-items: center; /* Center-align content horizontally within each section */
+  flex-direction: column;
 }
 
-/* Style headings, paragraphs, and links within the sections as needed */
 .footer-section h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  position: relative; /* Create a stacking context to place text above the line */
-  background-color: #333; /* Background color behind the text to hide the line behind it */
-  z-index: 1; /* Bring text to the front */
+  text-align: right;
+  width: 100%;
+  position: relative;
+  margin: 10px 0 20px;
+  font-weight: bold;
+}
+
+.footer-section h3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 100%;
+  border-top: 1px solid #000;
 }
 
 .footer-section p {
@@ -46,22 +48,17 @@ footer {
   padding: 0;
 }
 
-.footer-section li {
-  margin-bottom: 5px;
-}
-
 .footer-section a {
   color: white;
   text-decoration: none;
 }
 
-/* Style the logo image */
 .mainlogo {
-  max-width: 100em; /* Set a maximum width for the logo */
-  margin-top: 2em; /* Offset towards the bottom */
-  margin-right: 2em; /* Offset to the right */
+  max-width: 100em;
+  margin-top: 2em;
+  margin-right: 2em;
 }
 
-.social-logo{
-  padding:.25em;
+.social-logo {
+  padding: 0.25em;
 }
