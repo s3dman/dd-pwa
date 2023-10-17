@@ -11,24 +11,18 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.25);
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
+  opacity: 0;
+  padding: 1em;
+  height: 100%;
   cursor: pointer;
-  transition: background 0.3s;
-}
-
-.arrow:hover {
-  background: rgba(255, 255, 255, 0.5);
 }
 
 .prev {
-  left: 1em;
+  left: 0;
 }
 
 .next {
-  right: 1em;
+  right: 0;
 }
 
 .scroll-indicator {

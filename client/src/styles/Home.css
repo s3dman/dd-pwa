@@ -1,7 +1,61 @@
-.expertise-container {
+.caption-container {
   background-color: #ffffff;
   font-weight: regular;
   color: #000000;
   margin: 0;
   padding: 5em;
+}
+
+.expertise-container {
+  display: flex;
+  justify-content: center;
+}
+
+.expertise-img {
+  transition: filter 0.25s ease-in-out;
+}
+
+.expertise-img-container {
+  position: relative;
+  height: 33vh;
+  overflow: hidden;
+  padding: 2px;
+}
+
+.expertise-img:hover {
+  filter: blur(5px);
+}
+
+.expertise-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.expertise-img-container:hover .expertise-overlay {
+  opacity: 1; /* Show the overlay on image hover */
+}
+
+.expertise-overlay h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.expertise-overlay p {
+  font-size: 14px;
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 0;
+  color: #01579b;
 }
