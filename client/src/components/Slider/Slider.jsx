@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Slider.css";
 
-const Slider = ({ data }) => {
+function Slider({ data }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideLength = data.length;
 
@@ -11,12 +11,10 @@ const Slider = ({ data }) => {
 
   const nextSlide = () => {
     setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
-    console.log("next");
   };
 
   const prevSlide = () => {
     setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
-    console.log("prev");
   };
 
   function auto() {
@@ -42,23 +40,28 @@ const Slider = ({ data }) => {
             className={index === currentSlide ? "slide current" : "slide"}
             key={index}
           >
-            {index === currentSlide && (
-              <div>
-                <img src={slide.src} alt="slide" className="image" />
-                <div className="overlay">
-                  <h2>{slide.title}</h2>
-                  <p>{slide.desc}</p>
-                </div>
-              </div>
-            )}
+            <div>
+              <img src={slide.src} alt="slide" className="image" />
+              <h1>{slide.title}</h1>
+            </div>
           </div>
         );
       })}
+
+      <div className="scroll-indicator">
+        {data.map((_, index) => (
+          <span
+            key={index}
+            className={index === currentSlide ? "dot active" : "dot"}
+            onClick={() => setCurrentSlide(index)}
+          ></span>
+        ))}
+      </div>
 
       <button className="arrow prev" onClick={prevSlide} />
       <button className="arrow next" onClick={nextSlide} />
     </div>
   );
-};
+}
 
 export default Slider;

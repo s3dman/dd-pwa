@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
-
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
@@ -10,14 +9,15 @@ import Projects from "./routes/Projects";
 import Careers from "./routes/Careers";
 import Contact from "./routes/Contact";
 import NoPage from "./routes/NoPage";
+import Project from "./components/Project/Project";
 
 const Layout = () => {
   return (
     <>
-      <Navbar />
       <div className="content">
         <Outlet />
       </div>
+      <Navbar />
       <Footer />
     </>
   );
@@ -33,6 +33,7 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="careers" element={<Careers />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="project/:id" element={<Project />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

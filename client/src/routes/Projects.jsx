@@ -2,7 +2,7 @@ import React from "react";
 
 function Projects() {
   return (
-    <div className="projects">
+    <>
       <h1>Projects</h1>
       <p>
         It had been a simple realization that had changed Debra's life
@@ -13,7 +13,7 @@ function Projects() {
         of hearts her Instagram posts received wasn't any longer the indication
         of her own self-worth.
       </p>
-    </div>
+    </>
   );
 }
 

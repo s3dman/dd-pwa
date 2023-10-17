@@ -1,25 +1,32 @@
 import React from "react";
 import Slider from "../components/Slider/Slider";
+import "../styles/Home.css";
 
-import img1 from "../assets/1.jpeg";
-import img2 from "../assets/2.jpeg";
 import img3 from "../assets/3.jpeg";
 import img4 from "../assets/4.jpeg";
 import img5 from "../assets/5.jpeg";
 
 const s = [
-  { src: img1, title: "title1", desc: "description1" },
-  { src: img2, title: "title2", desc: "description2" },
-  { src: img3, title: "title3", desc: "description3" },
-  { src: img4, title: "title4", desc: "description4" },
-  { src: img5, title: "title5", desc: "description5" },
+  { src: img3, title: "CASAGRAND MERIDIAN" },
+  { src: img4, title: "NAVACHETANA HOSPITAL" },
+  { src: img5, title: "CASAGRAND ORLENA" },
 ];
 
 const Home = () => {
   return (
-    <div className="home">
+    <>
       <Slider data={s} />
-    </div>
+      <div className="expertise-container">
+        At Destination we believe quality is never an accident.
+        <br />
+        It is always the result of high intentions, sincere efforts and
+        <br />
+        skillful execution in search of Excellence...
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </>
   );
 };
 
