@@ -1,154 +1,26 @@
 import React from "react";
+import Slider from "../components/Slider/Slider";
 
-function Home() {
+import img1 from "../assets/1.jpeg";
+import img2 from "../assets/2.jpeg";
+import img3 from "../assets/3.jpeg";
+import img4 from "../assets/4.jpeg";
+import img5 from "../assets/5.jpeg";
+
+const s = [
+  { src: img1, title: "title1", desc: "description1" },
+  { src: img2, title: "title2", desc: "description2" },
+  { src: img3, title: "title3", desc: "description3" },
+  { src: img4, title: "title4", desc: "description4" },
+  { src: img5, title: "title5", desc: "description5" },
+];
+
+const Home = () => {
   return (
     <div className="home">
-      <h1>Home</h1>
-      <p>
-        Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
-        enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
-        exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit
-        nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor
-        minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure
-        elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor
-        Lorem duis laboris cupidatat officia voluptate. Culpa proident
-        adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod.
-        Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
-        Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa
-        et culpa duis. Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-        reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex
-        esse exercitation amet. Nisi anim cupidatat excepteur officia.
-        Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
-        voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
-        officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
-        commodo officia dolor Lorem duis laboris cupidatat officia voluptate.
-        Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis
-        officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt
-        velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur
-        et est culpa et culpa duis. Lorem ipsum dolor sit amet, officia
-        excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem
-        pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur
-        officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
-        voluptate voluptate dolor minim nulla est proident. Nostrud officia
-        pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-        reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-        voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
-        sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-        duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-        consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet,
-        officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
-        Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat
-        excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-        amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-        pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-        reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-        voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
-        sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-        duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-        consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet,
-        officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
-        Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat
-        excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-        amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-        pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-        reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-        voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
-        sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-        duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-        consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet,
-        officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
-        Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat
-        excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-        amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-        pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-        reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-        voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
-        sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-        duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-        consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet,
-        officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
-        Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat
-        excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-        amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-        pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-        reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-        voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
-        sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-        duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-        consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet,
-        officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
-        Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat
-        excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-        amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-        pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-        reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-        voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
-        sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-        duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-        consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet,
-        officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
-        Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat
-        excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-        amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-        pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-        reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-        voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
-        sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-        duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-        consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet,
-        officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
-        Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat
-        excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-        amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-        pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-        reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-        voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
-        sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-        duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-        consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet,
-        officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
-        Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat
-        excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-        amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-        pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-        reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-        voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
-        sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-        duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-        consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet,
-        officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
-        Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat
-        excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-        amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-        pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-        reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-        voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
-        sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-        duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-        consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet,
-        officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
-        Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat
-        excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-        amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-        pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-        reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-        voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
-        sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-        duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-        consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet,
-        officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
-        Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat
-        excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip
-        amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-        pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
-        reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
-        voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem
-        sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-        duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-        consectetur et est culpa et culpa duis.
-      </p>
+      <Slider data={s} />
     </div>
   );
-}
+};
 
 export default Home;

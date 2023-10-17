@@ -1,0 +1,64 @@
+.slider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.prev {
+  left: 1em;
+}
+
+.next {
+  right: 1em;
+}
+
+.slide {
+  position: relative;
+  display: none;
+}
+
+.current {
+  display: block;
+}
+
+.image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+}
