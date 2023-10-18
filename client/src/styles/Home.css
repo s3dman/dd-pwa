@@ -15,6 +15,7 @@
 
 .expertise-img {
   transition: filter 0.3s ease-in-out;
+  object-fill: contain;
 }
 
 .expertise-img-container {
