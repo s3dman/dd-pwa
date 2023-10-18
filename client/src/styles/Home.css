@@ -4,8 +4,6 @@
   color: #000000;
   margin: 0;
   padding: 5em;
-  justify-content: center;
-  align-items: center;
 }
 
 .expertise-container {
@@ -59,10 +57,10 @@
 
 .expertise-title {
   display: flex;
-  background-color: red;
-  width: 64vw;
 }
-h2 {
-  margin-bottom: 0.5em;
+
+.expertise-title h2 {
+  margin-left: 5.5em;
   color: #01579b;
+  margin-bottom: 0.5em;
 }

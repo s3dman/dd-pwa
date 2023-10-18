@@ -16,6 +16,7 @@ const s = [
   { src: img5, title: "CASAGRAND ORLENA" },
 ];
 
+// TODO fix align for expertise-title
 const Home = () => {
   return (
     <>
