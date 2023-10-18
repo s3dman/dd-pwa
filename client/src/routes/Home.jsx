@@ -17,7 +17,7 @@ const s = [
 ];
 
 // TODO fix align for expertise-title
-const Home = () => {
+function Home() {
   return (
     <>
       <Slider data={s} />
@@ -66,6 +66,6 @@ const Home = () => {
       </div>
     </>
   );
-};
+}
 
 export default Home;
