@@ -13,11 +13,11 @@
 
 .expertise-img {
   transition: filter 0.3s ease-in-out;
+  object-fit: contain;
 }
 
 .expertise-img-container {
   position: relative;
-  height: 33vh;
   overflow: hidden;
   padding: 2px;
 }
