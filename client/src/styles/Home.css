@@ -9,11 +9,12 @@
 .expertise-container {
   display: flex;
   justify-content: center;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .expertise-img {
   transition: filter 0.3s ease-in-out;
-  object-fit: contain;
 }
 
 .expertise-img-container {
