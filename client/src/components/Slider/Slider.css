@@ -27,7 +27,7 @@
 
 .scroll-indicator {
   position: absolute;
-  bottom: 4em;
+  bottom: 3.5em;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -36,15 +36,15 @@
 .dot {
   width: 10px;
   height: 10px;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
-  margin: 0 5px;
+  margin: 0 6px;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 .dot.active {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 1);
 }
 
 .slide {
@@ -65,16 +65,9 @@
   object-fit: fill;
 }
 
-.overlay {
-}
-
-h1 {
+.slider h1 {
   position: absolute;
-  bottom: 1em;
-  left: 1em;
+  bottom: 2em;
+  left: 3em;
   color: #fff;
-}
-
-p {
-  font-size: 14px;
 }
