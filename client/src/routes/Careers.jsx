@@ -2,25 +2,9 @@ import React from "react";
 import "../styles/Careers.css";
 
 function Careers() {
-  <>
-    <head>
-      <link rel="stylesheet" href="trial.css"></link>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Rubik:wght@300&display=swap"
-        rel="stylesheet"
-      ></link>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
-        rel="stylesheet"
-      ></link>
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-      ></meta>
-      <meta charset="UTF-8"></meta>
-    </head>
-    <div id="body">
-      <body>
+  return (
+    <>
+      <div id="body">
         <div id="logo">
           <img src="logo 1 (3).png" id="logo" position="fixed"></img>
         </div>
@@ -79,9 +63,9 @@ function Careers() {
             </form>
           </div>
         </section>
-      </body>
-    </div>
-  </>;
+      </div>
+    </>
+  );
 }
 
 export default Careers;
