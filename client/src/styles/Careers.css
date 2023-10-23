@@ -1,0 +1,25 @@
+.BLACK_LOGO{
+    position:fixed;
+    padding-bottom:5%;
+    width:17%;
+    height:6%;
+    top:5%;
+    left:5%;
+}
+
+#careers-heading{
+    color:#01579B;
+    position:relative;
+    margin-top:10%;
+    margin-bottom:95%;
+    /* background-color:white; */
+    /* text-align:left; */
+}
+
+#career-paragraph{
+    color:#505050;
+    position:relative;
+    margin-top:20%;
+    margin-bottom:80%;
+
+}
