@@ -22,4 +22,4 @@ npm run dev
 * Work should be done in their own branches.
 * Pull requests made will be reviewed and wont be merged until things are finalized. 
 
-###NEVILLE SHOULD STOP BEING A CUNT
+### NEVILLE SHOULD STOP BEING A CUNT
