@@ -3,8 +3,12 @@ footer {
   color: white;
   padding: 2em;
   text-align: center;
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 600;
   font-size: 14px;
-  line-height: 2;
+  line-height: 22px;
+  text-transform: uppercase;
 }
 
 .footer-container {

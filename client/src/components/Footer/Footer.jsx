@@ -42,8 +42,12 @@ function Footer() {
           <h3 className="section-header">
             <hr className="section-hr" /> Address
           </h3>
-          <p>123 Main Street</p>
-          <p>City, State ZIP</p>
+          <p>#27, Gurupriya Anushka,</p>
+          <p>Ground Floor, 5th Cross,</p>
+          <p>3rd Main, B T M 2nd Stage,</p>
+          <p>N S Palaya, Dollar Colony,</p>
+          <p>Bangalore, karnataka</p>
+          <p>560076</p>
         </div>
       </div>
 
