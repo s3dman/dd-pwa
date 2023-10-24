@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import "../styles/Contact.css";
+import img10 "../assets/"
 
 const Contact = () => {
+  <div className="logo">
+    <img src={img10} alt="LOGO" className="BLACK_LOGO" />
+  </div>
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
