@@ -7,14 +7,10 @@
   left: 5%;
 }
 
-<<<<<<< Updated upstream
 #careers-heading {
   color: #01579b;
   position: relative;
-  /* margin-top:10%; */
-  /* margin-bottom:95%; */
-  /* background-color:white; */
-  /* text-align:left; */
+ 
 }
 
 #career-paragraph {
@@ -23,7 +19,6 @@
   /* margin-top: 20%; */
   /* margin-bottom: 80%; */
 }
-=======
 #careers-heading{
     color:#01579B;
     position:relative;
@@ -63,4 +58,3 @@
     flex-direction:row;
 }
 
->>>>>>> Stashed changes
