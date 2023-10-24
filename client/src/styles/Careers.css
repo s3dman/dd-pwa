@@ -7,6 +7,7 @@
   left: 5%;
 }
 
+<<<<<<< Updated upstream
 #careers-heading {
   color: #01579b;
   position: relative;
@@ -22,3 +23,44 @@
   /* margin-top: 20%; */
   /* margin-bottom: 80%; */
 }
+=======
+#careers-heading{
+    color:#01579B;
+    position:relative;
+    margin-top:6em;
+    
+    
+}
+
+#career-paragraph{
+    color:#505050;
+    position:relative;
+    margin-top:3em;
+   
+
+}
+
+#careers-featured-roles{
+    position:relative;
+    color:black;
+    margin-top:6em;
+}
+
+#careers-roles{
+  
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color:#505050;
+}
+
+#careers-form{
+    
+}
+
+.flex-container{
+    display:flex;
+    flex-direction:row;
+}
+
+>>>>>>> Stashed changes
