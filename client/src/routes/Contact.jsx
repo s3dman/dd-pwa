@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import "../styles/Contact.css";
-import img10 "../assets/"
+import img10 from "../assets/main_logo_black.png";
 
 const Contact = () => {
-  <div className="logo">
-    <img src={img10} alt="LOGO" className="BLACK_LOGO" />
-  </div>
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -25,6 +22,8 @@ const Contact = () => {
   };
 
   return (
+    <div className="logo">
+      <img src={img10} alt="LOGO" className="BLACK_LOGO" />
     <div className="two-column-container">
       <div className="column left-column">
         <h5>Contact</h5>
@@ -93,6 +92,7 @@ const Contact = () => {
           <button type="submit">Submit</button>
         </form>
       </div>
+    </div>
     </div>
   );
 };
