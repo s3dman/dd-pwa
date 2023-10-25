@@ -3,3 +3,7 @@
   left: 4em;
   top: 1.5em;
 }
+
+.header img {
+  max-width: 100em;
+}
