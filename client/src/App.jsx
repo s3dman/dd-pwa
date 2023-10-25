@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 import Home from "./routes/Home";
 import About from "./routes/About";
@@ -18,6 +19,7 @@ const Layout = () => {
         <Outlet />
       </div>
       <Navbar />
+      <Header dark={false} />
       <Footer />
     </>
   );
