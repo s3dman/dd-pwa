@@ -88,7 +88,7 @@ function Careers() {
                         className="form-textbox"
                       >
                         <option value="" disabled selected>
-                          Select an option
+                          Applying position
                         </option>
                         <option value="ARCHITECTURAL ASSISTANT">
                           ARCHITECTURAL ASSISTANT
