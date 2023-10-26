@@ -1,15 +1,11 @@
 import React from "react";
 import "../styles/Careers.css";
 import "../styles/global.css";
-import img10 from "../assets/main_logo_black.png";
 
 function Careers() {
   return (
     <>
       <div id="entire-career">
-        <div className="logo">
-          <img src={img10} alt="LOGO" className="BLACK_LOGO" />
-        </div>
         <div id="career-body">
           <div id="careers-heading">
             <h1>Careers</h1>
