@@ -40,7 +40,7 @@ function Footer() {
         </div>
         <div className="footer-section">
           <h3 className="section-header">
-            <hr className="section-hr" /> Address
+            <hr className="section-hr" /> VISIT
           </h3>
           <p>#27, Gurupriya Anushka,</p>
           <p>Ground Floor, 5th Cross,</p>
