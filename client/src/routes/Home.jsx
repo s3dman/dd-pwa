@@ -10,17 +10,31 @@ import img11 from "../assets/architecture-exp.png";
 import img12 from "../assets/interior-exp.png";
 import img13 from "../assets/planning-exp.png";
 
-const s = [
-  { src: img3, title: "CASAGRAND MERIDIAN" },
-  { src: img4, title: "NAVACHETANA HOSPITAL" },
-  { src: img5, title: "CASAGRAND ORLENA" },
-];
+const fs = require("fs");
+const path = require("path");
+
+const folderPath = "../assets/slides/";
+const imageArray = [];
+
+fs.readdir(folderPath, (err, files) => {
+  if (err) {
+    console.error("Error reading folder:", err);
+    return;
+  }
+  files.forEach((file) => {
+    const filePath = path.join(folderPath, file);
+    imageArray.push({
+      src: filePath,
+      title: path.basename(filePath, path.extname(filePath)),
+    });
+  });
+});
 
 // TODO fix align for expertise-title
 function Home() {
   return (
     <>
-      <Slider data={s} />
+      <Slider data={imageArray} />
       <div className="caption-container">
         At Destination, we believe quality is never an accident.
         <br />
