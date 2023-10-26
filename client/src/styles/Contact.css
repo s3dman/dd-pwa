@@ -9,7 +9,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: black;
   height: 100%;
 }
@@ -20,7 +20,7 @@ h5 {
   font-size: 24px;
   text-align: left;
   margin-bottom: 97px;
-  color: #01579B;
+  color: #01579b;
 }
 
 h2 {
@@ -46,10 +46,10 @@ body {
 }
 
 p {
-    margin-bottom: -12px;
-    font-family: "Baloo 2", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
+  margin-bottom: -12px;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .BLACK_LOGO {
@@ -76,7 +76,7 @@ p {
 }
 
 .left-column {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding-left: 17.7%;
   padding-right: 7%;
   padding-top: 6%;
@@ -84,19 +84,19 @@ p {
 }
 
 .right-column {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding-right: 17.7%;
   padding-top: 6%;
 }
 
 .Hours {
-    margin-bottom: 97px;
+  margin-bottom: 97px;
 }
 
 .Enquires {
-    margin-bottom: 97px;
+  margin-bottom: 97px;
 }
 
 .WWS {
-    margin-bottom: 97px;
+  margin-bottom: 97px;
 }
