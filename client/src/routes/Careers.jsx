@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../components/Header/Header";
 import "../styles/Careers.css";
 import "../styles/global.css";
 
@@ -135,6 +136,7 @@ function Careers() {
           </div>
         </div>
       </div>
+      <Header dark={true} />
     </>
   );
 }
