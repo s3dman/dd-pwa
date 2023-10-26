@@ -2,20 +2,20 @@ import React from "react";
 import Slider from "../components/Slider/Slider";
 import "../styles/Home.css";
 
-import img1 from "../assets/slides/AQUA.jpeg";
-import img2 from "../assets/CASAGRAND MERIDIAN.jpeg";
-import img3 from "../assets/CASAGRAND ORLENA.jpeg";
-import img4 from "../assets/NAVACHETANA HOSPITAL.jpeg";
-import img5 from "../assets/SPECTRUM.jpeg";
+import img1 from "../assets/slides/AQUA.jpg";
+import img2 from "../assets/slides/CASAGRAND MERIDIAN.jpg";
+import img3 from "../assets/slides/CASAGRAND ORLENA.jpg";
+import img4 from "../assets/slides/NAVACHETANA HOSPITAL.jpg";
+import img5 from "../assets/slides/SPECTRUM.jpg";
 
 import img11 from "../assets/architecture-exp.png";
 import img12 from "../assets/interior-exp.png";
 import img13 from "../assets/planning-exp.png";
 
 const s = [
-  { src: img1, title: "AQUA" },
-  { src: img2, title: "CASAGRAND MERIDIAN" },
   { src: img3, title: "CASAGRAND ORLENA" },
+  { src: img2, title: "CASAGRAND MERIDIAN" },
+  { src: img1, title: "AQUA" },
   { src: img4, title: "NAVACHETANA HOSPITAL" },
   { src: img5, title: "SPECTRUM" },
 ];
