@@ -2,39 +2,29 @@ import React from "react";
 import Slider from "../components/Slider/Slider";
 import "../styles/Home.css";
 
-import img3 from "../assets/3.jpeg";
-import img4 from "../assets/4.jpeg";
-import img5 from "../assets/5.jpeg";
+import img1 from "../assets/slides/AQUA.jpeg";
+import img2 from "../assets/CASAGRAND MERIDIAN.jpeg";
+import img3 from "../assets/CASAGRAND ORLENA.jpeg";
+import img4 from "../assets/NAVACHETANA HOSPITAL.jpeg";
+import img5 from "../assets/SPECTRUM.jpeg";
 
 import img11 from "../assets/architecture-exp.png";
 import img12 from "../assets/interior-exp.png";
 import img13 from "../assets/planning-exp.png";
 
-const fs = require("fs");
-const path = require("path");
-
-const folderPath = "../assets/slides/";
-const imageArray = [];
-
-fs.readdir(folderPath, (err, files) => {
-  if (err) {
-    console.error("Error reading folder:", err);
-    return;
-  }
-  files.forEach((file) => {
-    const filePath = path.join(folderPath, file);
-    imageArray.push({
-      src: filePath,
-      title: path.basename(filePath, path.extname(filePath)),
-    });
-  });
-});
+const s = [
+  { src: img1, title: "AQUA" },
+  { src: img2, title: "CASAGRAND MERIDIAN" },
+  { src: img3, title: "CASAGRAND ORLENA" },
+  { src: img4, title: "NAVACHETANA HOSPITAL" },
+  { src: img5, title: "SPECTRUM" },
+];
 
 // TODO fix align for expertise-title
 function Home() {
   return (
     <>
-      <Slider data={imageArray} />
+      <Slider data={s} />
       <div className="caption-container">
         At Destination, we believe quality is never an accident.
         <br />
