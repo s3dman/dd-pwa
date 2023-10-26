@@ -3,14 +3,14 @@
   font-weight: regular;
   color: #000000;
   margin: 0;
-  padding: 5em;
+  padding: 5rem;
 }
 
 .expertise-container {
   display: flex;
   justify-content: center;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .expertise-img {
@@ -51,7 +51,7 @@
 }
 
 .overlay-desc {
-  padding: 0 2em 0 2em;
+  padding: 0 2rem 0 2rem;
   height: 0;
   opacity: 0;
   transition: opacity 0.3s;
@@ -62,8 +62,8 @@
 }
 
 .expertise-title h2 {
-  margin-left: 5.5em;
+  margin-left: 5.5rem;
   color: #01579b;
-  margin-bottom: 0.5em;
-  background-color: #FFFFFF;
+  margin-bottom: 0.5rem;
+  background-color: #ffffff;
 }
