@@ -88,7 +88,7 @@ function Careers() {
                   <tr>
                     <td colspan="2">
                       <select
-                        value="Applying Position"
+                        // value="Applying Position"
                         className="form-textbox"
                       >
                         <option value="" disabled selected>
