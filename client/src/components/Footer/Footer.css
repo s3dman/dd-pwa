@@ -49,6 +49,7 @@ footer {
 
 .section-header {
   white-space: nowrap;
+  font-size:;
 }
 .section-hr {
   margin-right: 1rem;
@@ -57,6 +58,11 @@ footer {
   width: 30%;
 }
 
-.section-hr h3 {
+.section-header {
   font-size: 16px;
+}
+
+.cc {
+  font-size: 12px;
+  color: #d8d8d8;
 }

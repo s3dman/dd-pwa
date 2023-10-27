@@ -52,7 +52,7 @@ function Footer() {
       </div>
 
       <div className="footer-container">
-        <p>&copy;2023 DESTINATIONDESIGNS.NET.IN</p>
+        <p className="cc">&copy;2023 DESTINATIONDESIGNS.NET.IN</p>
         <div className="social-logos">
           <a
             href="https://www.instagram.com/dojacat"
