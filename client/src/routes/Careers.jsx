@@ -31,23 +31,17 @@ function Careers() {
 
           <div className="flex-container-form">
             <div className="flex-item" id="careers-featured-roles">
-              <h2>Featured Roles</h2>
+             <div > <h2 >Featured Roles</h2></div>
               <p id="careers-roles">
-                ARCHITECTURAL ASSISTANT
-                <br />
-                JUNIOR ARCHITECT
-                <br />
-                ASSISTANT ARCHITECT
-                <br />
-                ARCHITECT
-                <br />
-                SENIOR ARCHITECT
-                <br />
-                <br />
-                <br />
-                For Internship please mail us your portfolio to
-                <br />
-                info@destinationdesigns.net.in
+                <div id="featured-roles-architectural-assistant" className="featured-roles-alignment">ARCHITECTURAL ASSISTANT</div>
+                
+                <div className="featured-roles-alignment">JUNIOR ARCHITECT</div>
+                <div className="featured-roles-alignment">ASSISTANT ARCHITECT</div>
+                <div className="featured-roles-alignment">ARCHITECT</div>
+                <div className="featured-roles-alignment">SENIOR ARCHITECT</div>
+               
+                <div id="text-below-featured-roles">For Internship please mail us your portfolio to
+                info@destinationdesigns.net.in</div>
               </p>
             </div>
 
@@ -87,9 +81,10 @@ function Careers() {
                       <select
                         // value="Applying Position"
                         className="form-textbox"
-                      >
+                        id="form-dropdown"
+                      > 
                         <option value="" disabled selected>
-                          Select an option
+                          Applying position
                         </option>
                         <option value="ARCHITECTURAL ASSISTANT">
                           ARCHITECTURAL ASSISTANT
