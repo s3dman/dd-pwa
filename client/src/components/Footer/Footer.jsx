@@ -40,7 +40,7 @@ function Footer() {
         </div>
         <div className="footer-section">
           <h3 className="section-header">
-            <hr className="section-hr" /> Address
+            <hr className="section-hr" /> VISIT
           </h3>
           <p>#27, Gurupriya Anushka,</p>
           <p>Ground Floor, 5th Cross,</p>
@@ -52,7 +52,7 @@ function Footer() {
       </div>
 
       <div className="footer-container">
-        <p>&copy;2023 DESTINATIONDESIGNS.NET.IN</p>
+        <p className="cc">&copy;2023 DESTINATIONDESIGNS.NET.IN</p>
         <div className="social-logos">
           <a
             href="https://www.instagram.com/dojacat"
