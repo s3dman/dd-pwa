@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Header from "../components/Header/Header";
 import "../styles/Contact.css";
 
 const Contact = () => {
@@ -20,6 +21,7 @@ const Contact = () => {
   };
 
   return (
+    <>
       <div className="two-column-container">
         <div className="column left-column">
           <h5>Contact</h5>
@@ -93,6 +95,8 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <Header dark={true} />
+    </>
   );
 };
 
