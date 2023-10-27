@@ -52,15 +52,6 @@ p {
   font-size: 18px;
 }
 
-.BLACK_LOGO {
-  position: absolute;
-  padding-bottom: 5%;
-  width: 15%;
-  height: 40px;
-  top: 30px;
-  left: 35px;
-}
-
 .content {
   text-align: left;
 }
