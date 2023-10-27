@@ -31,17 +31,29 @@ function Careers() {
 
           <div className="flex-container-form">
             <div className="flex-item" id="careers-featured-roles">
-             <div > <h2 >Featured Roles</h2></div>
+              <div>
+                {" "}
+                <h2>Featured Roles</h2>
+              </div>
               <p id="careers-roles">
-                <div id="featured-roles-architectural-assistant" className="featured-roles-alignment">ARCHITECTURAL ASSISTANT</div>
-                
+                <div
+                  id="featured-roles-architectural-assistant"
+                  className="featured-roles-alignment"
+                >
+                  ARCHITECTURAL ASSISTANT
+                </div>
+
                 <div className="featured-roles-alignment">JUNIOR ARCHITECT</div>
-                <div className="featured-roles-alignment">ASSISTANT ARCHITECT</div>
+                <div className="featured-roles-alignment">
+                  ASSISTANT ARCHITECT
+                </div>
                 <div className="featured-roles-alignment">ARCHITECT</div>
                 <div className="featured-roles-alignment">SENIOR ARCHITECT</div>
-               
-                <div id="text-below-featured-roles">For Internship please mail us your portfolio to
-                info@destinationdesigns.net.in</div>
+
+                <div id="text-below-featured-roles">
+                  For Internship please mail us your portfolio to <br />
+                  info@destinationdesigns.net.in
+                </div>
               </p>
             </div>
 
@@ -82,7 +94,7 @@ function Careers() {
                         // value="Applying Position"
                         className="form-textbox"
                         id="form-dropdown"
-                      > 
+                      >
                         <option value="" disabled selected>
                           Applying position
                         </option>
