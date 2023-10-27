@@ -32,7 +32,6 @@ function Careers() {
           <div className="flex-container-form">
             <div className="flex-item" id="careers-featured-roles">
               <div>
-                {" "}
                 <h2>Featured Roles</h2>
               </div>
               <p id="careers-roles">
