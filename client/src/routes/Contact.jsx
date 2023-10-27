@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header/Header";
 import "../styles/Contact.css";
+
+<script>import url("https://maps.googleapis.com/maps/api/js?key=AIzaSyBkQ0ZKT5aFnJAHYedB4QKjOtatoIdagzk&libraries=places");</script>
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,6 +21,33 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted with data:", formData);
+  };
+
+  useEffect(() => {
+    // Load the Google Maps JavaScript API script
+    loadGoogleMapScript();
+  }, []);
+
+  const loadGoogleMapScript = () => {
+    // Check if the Google Maps API is already loaded
+    if (window.google) {
+      initializeMap();
+    } else {
+      const script = document.createElement("script");
+      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBkQ0ZKT5aFnJAHYedB4QKjOtatoIdagzk&libraries=places`;
+      script.async = true;
+      script.defer = true;
+      script.onload = initializeMap;
+      document.head.appendChild(script);
+    }
+  };
+
+  const initializeMap = () => {
+    // Create a new map instance and set its properties
+    const map = new window.google.maps.Map(document.getElementById("map"), {
+      center: { lat: 12.907362923943463, lng: 77.60306925543291 }, // Set the initial map center
+      zoom: 20, // Set the initial zoom level
+    });
   };
 
   return (
@@ -44,7 +74,7 @@ const Contact = () => {
         <div className="column right-column">
           <p>
             For all enquiries, whether you have a project in mind or just want
-            to say hello,please get in touch via this form.
+            to say hello, please get in touch via this form.
           </p>
           <br></br>
           <form onSubmit={handleSubmit}>
@@ -95,6 +125,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <div id="map" style={{ width: "100%", height: "400px" }}></div>
       <Header dark={true} />
     </>
   );
