@@ -2,11 +2,11 @@
 ```
 npm install
 npm run dev
-
 ```
 
 ### Making Changes
 * Naming convention to be followed - PascalCase.
+* All componenets should be functions with proper returns.
 * Components:
 	* create folder for each component inside /src/components.
 	* make .jsx and .css files for each component with same naming convention. eg; Component1.jsx, Component1.css.
