@@ -15,8 +15,8 @@
 }
 
 .expertise-img {
-  transition: filter 0.3s ease-in-out;
   width: 20vw;
+  transition: filter 0.3s ease-in-out;
 }
 
 .expertise-img-container {
@@ -35,24 +35,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 1;
-  transition: opacity 0.3s;
 }
 
 .expertise-overlay h3 {
+  position: absolute;
   margin: 0;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 .expertise-img-container:hover .overlay-desc {
   opacity: 1;
 }
+.expertise-img-container:hover .expertise-overlay h3 {
+  opacity: 0;
+}
+
 .expertise-img-container:hover .expertise-img {
   filter: blur(5px);
 }
 
 .overlay-desc {
+  position: absolute;
   padding: 0 2rem 0 2rem;
-  height: 0;
   opacity: 0;
   transition: opacity 0.3s;
 }
