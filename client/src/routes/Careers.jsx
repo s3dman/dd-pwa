@@ -3,6 +3,13 @@ import Header from "../components/Header/Header";
 import "../styles/Careers.css";
 import "../styles/global.css";
 
+function handleResumeFileChange(event) {
+  const selectedFile = event.target.files[0];
+  if (selectedFile) {
+    console.log(`Selected Resume File: ${selectedFile.name}`);
+    // You can do further processing or store the selected file.
+  }
+}
 function Careers() {
   return (
     <>
@@ -16,22 +23,22 @@ function Careers() {
               Our studio has grown to become more than just a place of work to
               our staff members. It is a place where people can achieve great
               things, invest in themselves
-              <br />
+              {/* <br /> */}
               and be rewarded for it. This has contributed to a phenomenal team
               that is strong and able and this sort of functionality gives us
               the freedom to focus on our
-              <br />
+              {/* <br /> */}
               core business practice and what we do best. It has allowed us to
               serve our clients to the best of our ability, achieving their
               satisfaction, and not stopping until
-              <br />
+              {/* <br /> */}
               we have done so.
             </p>
           </div>
 
           <div className="flex-container-form">
             <div className="flex-item" id="careers-featured-roles">
-              <div>
+              <div id="featured-roles-heading">
                 <h2>Featured Roles</h2>
               </div>
               <p id="careers-roles">
@@ -58,7 +65,7 @@ function Careers() {
 
             <div className="flex-item" id="careers-form">
               <form>
-                <table id="careers-table">
+                <table border="0px" id="careers-table">
                   <tr>
                     <td>
                       <input
@@ -118,6 +125,16 @@ function Careers() {
                     <td className="form-above-button">Attach your Portfolio</td>
                   </tr>
                   <tr>
+                    {/* <td>
+                      <input
+                        type="file"
+                        value="Choose a file..."
+                        className="form-choose-a-file"
+                        id="resumeFileInput"
+                        accept=".pdf,.doc,.docx"
+                        onChange={handleResumeFileChange}
+                      />
+                    </td> */}
                     <td>
                       <input
                         type="button"
