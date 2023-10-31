@@ -10,7 +10,9 @@ function Footer() {
     <footer>
       <div className="footer-container">
         <div className="footer-section">
-          <img src={logo_white} alt="Main Logo" className="mainlogo" />
+          <Link to="/">
+            <img src={logo_white} alt="Main Logo" className="mainlogo" />
+          </Link>
         </div>
         <div className="footer-section">
           <h3 className="section-header">
