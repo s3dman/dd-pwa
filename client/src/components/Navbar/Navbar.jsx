@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logoOpen from "../../assets/menuopen_logo.png";
+import logoOpenLight from "../../assets/menuopen_logo_white.png";
+import logoOpenDark from "../../assets/menuopen_logo_black.png";
 import logoClosed from "../../assets/menuclose_logo.png";
 
-function Navbar() {
+function Navbar({ dark }) {
+  const logoOpen = dark ? logoOpenDark : logoOpenLight;
   const [isNavbarVisible, setIsNavbarVisible] = useState(false);
 
   const toggleNavbar = () => {

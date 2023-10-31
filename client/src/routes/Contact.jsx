@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header/Header";
+import Navbar from "../components/Navbar/Navbar";
 import "../styles/Contact.css";
 
 const Contact = () => {
@@ -96,6 +97,7 @@ const Contact = () => {
         </div>
       </div>
       <Header dark={true} />
+      <Navbar dark={true} />
     </>
   );
 };

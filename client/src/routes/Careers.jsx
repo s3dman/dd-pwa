@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header/Header";
+import Navbar from "../components/Navbar/Navbar";
 import "../styles/Careers.css";
 import "../styles/global.css";
 
@@ -160,6 +161,7 @@ function Careers() {
         </div>
       </div>
       <Header dark={true} />
+      <Navbar dark={true} />
     </>
   );
 }

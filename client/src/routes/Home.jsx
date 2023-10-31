@@ -1,7 +1,8 @@
 import React from "react";
 import Slider from "../components/Slider/Slider";
-import "../styles/Home.css";
 import Header from "../components/Header/Header";
+import Navbar from "../components/Navbar/Navbar";
+import "../styles/Home.css";
 
 import img1 from "../assets/slides/AQUA.jpg";
 import img2 from "../assets/slides/CASAGRAND MERIDIAN.jpg";
@@ -85,6 +86,7 @@ function Home() {
         </div>
       </div>
       <Header dark={false} />
+      <Navbar dark={false} />
     </>
   );
 }
