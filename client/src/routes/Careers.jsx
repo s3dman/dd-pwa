@@ -2,13 +2,14 @@ import React from "react";
 import Header from "../components/Header/Header";
 import "../styles/Careers.css";
 import "../styles/global.css";
-// function handleResumeFileChange(event) {
-//   const selectedFile = event.target.files[0];
-//   if (selectedFile) {
-//     console.log(`Selected Resume File: ${selectedFile.name}`);
-//     // You can do further processing or store the selected file.
-//   }
-// }
+
+function handleResumeFileChange(event) {
+  const selectedFile = event.target.files[0];
+  if (selectedFile) {
+    console.log(`Selected Resume File: ${selectedFile.name}`);
+    // You can do further processing or store the selected file.
+  }
+}
 function Careers() {
   return (
     <>
@@ -22,15 +23,15 @@ function Careers() {
               Our studio has grown to become more than just a place of work to
               our staff members. It is a place where people can achieve great
               things, invest in themselves
-              <br />
+              {/* <br /> */}
               and be rewarded for it. This has contributed to a phenomenal team
               that is strong and able and this sort of functionality gives us
               the freedom to focus on our
-              <br />
+              {/* <br /> */}
               core business practice and what we do best. It has allowed us to
               serve our clients to the best of our ability, achieving their
               satisfaction, and not stopping until
-              <br />
+              {/* <br /> */}
               we have done so.
             </p>
           </div>
