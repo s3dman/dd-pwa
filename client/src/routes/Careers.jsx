@@ -2,7 +2,13 @@ import React from "react";
 import Header from "../components/Header/Header";
 import "../styles/Careers.css";
 import "../styles/global.css";
-
+// function handleResumeFileChange(event) {
+//   const selectedFile = event.target.files[0];
+//   if (selectedFile) {
+//     console.log(`Selected Resume File: ${selectedFile.name}`);
+//     // You can do further processing or store the selected file.
+//   }
+// }
 function Careers() {
   return (
     <>
@@ -31,7 +37,7 @@ function Careers() {
 
           <div className="flex-container-form">
             <div className="flex-item" id="careers-featured-roles">
-              <div>
+              <div id="featured-roles-heading">
                 <h2>Featured Roles</h2>
               </div>
               <p id="careers-roles">
@@ -58,7 +64,7 @@ function Careers() {
 
             <div className="flex-item" id="careers-form">
               <form>
-                <table id="careers-table">
+                <table border="0px" id="careers-table">
                   <tr>
                     <td>
                       <input
@@ -118,6 +124,16 @@ function Careers() {
                     <td className="form-above-button">Attach your Portfolio</td>
                   </tr>
                   <tr>
+                    {/* <td>
+                      <input
+                        type="file"
+                        value="Choose a file..."
+                        className="form-choose-a-file"
+                        id="resumeFileInput"
+                        accept=".pdf,.doc,.docx"
+                        onChange={handleResumeFileChange}
+                      />
+                    </td> */}
                     <td>
                       <input
                         type="button"
