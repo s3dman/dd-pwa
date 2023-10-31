@@ -18,6 +18,7 @@ footer {
   position: relative;
   display: flex;
   flex-direction: column;
+  line-height: 2;
 }
 
 .footer-section p {
