@@ -1,3 +1,11 @@
-.image-grid > img {
-  width: 100vw;
+.container {
+  display: flex;
+  margin: 0 auto;
+  background: white;
+  justify-content: space-between;
+  padding: 0 5rem 0;
+}
+
+.project-link {
+  text-decoration: none;
 }
