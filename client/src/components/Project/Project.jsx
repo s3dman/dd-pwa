@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import ImgFetch from "../ImgFetch/ImgFetch";
+import Header from "../Header/Header";
+import Navbar from "../Navbar/Navbar";
+
 import "./Project.css";
 
 function Project() {
@@ -39,6 +42,8 @@ function Project() {
           <ImgFetch key={index} src={`projects/${projectPath}/${image}`} />
         ))}
       </div>
+      <Header dark={true} />
+      <Navbar dark={true} />
     </>
   );
 }
