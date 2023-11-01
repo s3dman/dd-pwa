@@ -33,30 +33,69 @@ function getFoldersRecursively(dir) {
 
 app.use("/image", express.static(path.join(__dirname, "assets")));
 
-app.get("/project/:projectClass/:projectType/:projectName", (req, res) => {
+app.get("/project/:projectName", (req, res) => {
   try {
-    const projectClass = req.params.projectClass;
     const projectName = req.params.projectName;
-    const projectType = req.params.projectType;
-    const projectDirectory = path.join(
-      __dirname,
-      "assets/projects/",
-      projectClass,
-      projectType,
-      projectName,
-    );
+    const projectDirectory = path.join(__dirname, "assets/projects");
 
-    fs.readdir(projectDirectory, (err, files) => {
+    fs.readdir(projectDirectory, (err, classes) => {
       if (err) {
         console.error(err);
-        res.status(500).send("Error parsing project.");
+        res.status(500).send("Error parsing project classes.");
+        return;
+      }
+
+      const projectInfo = {
+        projectName: projectName,
+        projectClass: null,
+        projectType: null,
+        projectPath: null,
+        imageFiles: [],
+      };
+
+      for (const projectClass of classes) {
+        const classDirectory = path.join(projectDirectory, projectClass);
+        if (fs.statSync(classDirectory).isDirectory()) {
+          const types = fs.readdirSync(classDirectory);
+          for (const projectType of types) {
+            const typeDirectory = path.join(classDirectory, projectType);
+            if (fs.statSync(typeDirectory).isDirectory()) {
+              if (fs.existsSync(path.join(typeDirectory, projectName))) {
+                projectInfo.projectClass = projectClass;
+                projectInfo.projectType = projectType;
+                projectInfo.projectPath = path.join(
+                  projectClass,
+                  projectType,
+                  projectName,
+                );
+
+                const projectPath = path.join(
+                  projectDirectory,
+                  projectClass,
+                  projectType,
+                  projectName,
+                );
+                const files = fs.readdirSync(projectPath);
+                projectInfo.imageFiles = files.filter((file) =>
+                  /\.(jpg|jpeg|png|gif|bmp|svg)$/.test(
+                    path.extname(file).toLowerCase(),
+                  ),
+                );
+
+                break;
+              }
+            }
+          }
+          if (projectInfo.projectPath) {
+            break;
+          }
+        }
+      }
+
+      if (projectInfo.projectPath) {
+        res.json(projectInfo);
       } else {
-        const imageFiles = files.filter((file) =>
-          /\.(jpg|jpeg|png|gif|bmp|svg)$/.test(
-            path.extname(file).toLowerCase(),
-          ),
-        );
-        res.json(imageFiles);
+        res.status(404).send("Project not found.");
       }
     });
   } catch (error) {
@@ -64,6 +103,37 @@ app.get("/project/:projectClass/:projectType/:projectName", (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
+// app.get("/project/:projectClass/:projectType/:projectName", (req, res) => {
+//   try {
+//     const projectClass = req.params.projectClass;
+//     const projectName = req.params.projectName;
+//     const projectType = req.params.projectType;
+//     const projectDirectory = path.join(
+//       __dirname,
+//       "assets/projects/",
+//       projectClass,
+//       projectType,
+//       projectName,
+//     );
+//
+//     fs.readdir(projectDirectory, (err, files) => {
+//       if (err) {
+//         console.error(err);
+//         res.status(500).send("Error parsing project.");
+//       } else {
+//         const imageFiles = files.filter((file) =>
+//           /\.(jpg|jpeg|png|gif|bmp|svg)$/.test(
+//             path.extname(file).toLowerCase(),
+//           ),
+//         );
+//         res.json(imageFiles);
+//       }
+//     });
+//   } catch (error) {
+//     console.error(error);
+//     res.status(500).send("Internal Server Error");
+//   }
+// });
 
 app.get("/projects", (req, res) => {
   try {
