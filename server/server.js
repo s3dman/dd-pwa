@@ -103,37 +103,6 @@ app.get("/project/:projectName", (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-// app.get("/project/:projectClass/:projectType/:projectName", (req, res) => {
-//   try {
-//     const projectClass = req.params.projectClass;
-//     const projectName = req.params.projectName;
-//     const projectType = req.params.projectType;
-//     const projectDirectory = path.join(
-//       __dirname,
-//       "assets/projects/",
-//       projectClass,
-//       projectType,
-//       projectName,
-//     );
-//
-//     fs.readdir(projectDirectory, (err, files) => {
-//       if (err) {
-//         console.error(err);
-//         res.status(500).send("Error parsing project.");
-//       } else {
-//         const imageFiles = files.filter((file) =>
-//           /\.(jpg|jpeg|png|gif|bmp|svg)$/.test(
-//             path.extname(file).toLowerCase(),
-//           ),
-//         );
-//         res.json(imageFiles);
-//       }
-//     });
-//   } catch (error) {
-//     console.error(error);
-//     res.status(500).send("Internal Server Error");
-//   }
-// });
 
 app.get("/projects", (req, res) => {
   try {
