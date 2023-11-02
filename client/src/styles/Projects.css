@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  margin: 0 auto;
+  background: white;
+  justify-content: space-between;
+  padding: 5rem 5rem 5rem;
+}
+
+.project-link {
+  text-decoration: none;
+}
