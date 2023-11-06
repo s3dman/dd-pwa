@@ -20,11 +20,6 @@ function Navbar({ dark }) {
       <nav className={navbarClass}>
         <ul className="navbar-list">
           <li className="navbar-item">
-            <Link to="/" onClick={toggleNavbar}>
-              HOME
-            </Link>
-          </li>
-          <li className="navbar-item">
             <Link to="/about" onClick={toggleNavbar}>
               ABOUT
             </Link>
