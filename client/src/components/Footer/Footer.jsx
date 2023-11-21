@@ -27,9 +27,6 @@ function Footer() {
           </h3>
           <ul>
             <li>
-              <Link to="/about">ABOUT</Link>
-            </li>
-            <li>
               <Link to="/projects">PROJECTS</Link>
             </li>
             <li>
@@ -37,6 +34,9 @@ function Footer() {
             </li>
             <li>
               <Link to="/careers">CAREERS</Link>
+            </li>
+            <li>
+              <Link to="/contact">CONTACT</Link>
             </li>
           </ul>
         </div>
