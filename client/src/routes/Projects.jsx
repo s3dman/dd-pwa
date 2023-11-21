@@ -93,8 +93,8 @@ function Projects() {
               ))}
           </div>
         </div>
-        <div className="grid">
-          <ol>
+        <div className="image-gallery">
+          <ul className="image-gallery">
             {selectedClass !== "all" &&
               selectedType !== "all" &&
               projectData[selectedClass]?.[selectedType]?.map((project) => (
@@ -104,11 +104,14 @@ function Projects() {
                     to={`/project/${project}`}
                     className="project-link"
                   >
-                    {project}
+                    <ImgFetch
+                      key={project}
+                      src={`projects/${selectedClass}/${selectedType}/${project}`}
+                    />
                   </Link>
                 </li>
               ))}
-          </ol>
+          </ul>
         </div>
       </div>
       <Header dark={true} />

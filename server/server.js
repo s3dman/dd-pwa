@@ -33,7 +33,23 @@ function getFoldersRecursively(dir) {
   }
 }
 
-app.use("/image", express.static(path.join(__dirname, "assets")));
+const staticMiddleware = express.static(path.join(__dirname, "assets"));
+
+app.use("/image", (req, res, next) => {
+  const requestedPath = decodeURIComponent(req.path);
+  const fullPath = path.join(__dirname, "assets", requestedPath);
+
+  if (fs.statSync(fullPath).isDirectory()) {
+    const files = fs.readdirSync(fullPath);
+    const firstFile = files.find((file) =>
+      fs.statSync(path.join(fullPath, file)).isFile(),
+    );
+    if (firstFile) {
+      req.url = path.join(requestedPath, firstFile);
+    }
+  }
+  staticMiddleware(req, res, next);
+});
 
 app.get("/project/:projectName", (req, res) => {
   try {
