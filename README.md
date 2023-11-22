@@ -21,5 +21,3 @@ npm run dev
 * All changes made should be commited with proper commit messages. 
 * Work should be done in their own branches.
 * Pull requests made will be reviewed and wont be merged until things are finalized. 
-
-### NEVILLE SHOULD STOP BEING A CUNT
