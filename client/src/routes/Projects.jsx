@@ -98,19 +98,29 @@ function Projects() {
             {selectedClass !== "all" &&
               selectedType !== "all" &&
               projectData[selectedClass]?.[selectedType]?.map((project) => (
-                <li>
-                  <Link
-                    key={project}
-                    to={`/project/${project}`}
-                    className="project-link"
-                  >
+                <li key={project}>
+                  <Link to={`/project/${project}`} className="project-link">
                     <ImgFetch
-                      key={project}
                       src={`projects/${selectedClass}/${selectedType}/${project}`}
                     />
                   </Link>
                 </li>
               ))}
+            {selectedClass !== "all" && selectedType === "all" && (
+              <>
+                {Object.keys(projectData[selectedClass]).map((typeKey) =>
+                  projectData[selectedClass][typeKey].map((project) => (
+                    <li key={project}>
+                      <Link to={`/project/${project}`} className="project-link">
+                        <ImgFetch
+                          src={`projects/${selectedClass}/${typeKey}/${project}`}
+                        />
+                      </Link>
+                    </li>
+                  )),
+                )}
+              </>
+            )}
           </ul>
         </div>
       </div>
