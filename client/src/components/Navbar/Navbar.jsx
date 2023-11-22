@@ -20,7 +20,7 @@ function Navbar({ dark }) {
       <nav className={navbarClass}>
         <ul className="navbar-list">
           <li className="navbar-item">
-            <Link to="/about" onClick={toggleNavbar}>
+            <Link to="/" onClick={toggleNavbar}>
               ABOUT
             </Link>
           </li>

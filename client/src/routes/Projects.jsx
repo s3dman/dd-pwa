@@ -26,6 +26,7 @@ function Projects() {
       .then((data) => {
         setProjectData(data);
         setIsLoading(false);
+        handleClassChange(Object.keys(data)[0]); //DEBUG
       })
       .catch((err) => {
         setError(err);
@@ -93,36 +94,34 @@ function Projects() {
               ))}
           </div>
         </div>
-        <div className="image-gallery">
-          <ul className="image-gallery">
-            {selectedClass !== "all" &&
-              selectedType !== "all" &&
-              projectData[selectedClass]?.[selectedType]?.map((project) => (
-                <li key={project}>
-                  <Link to={`/project/${project}`} className="project-link">
-                    <ImgFetch
-                      src={`projects/${selectedClass}/${selectedType}/${project}`}
-                    />
-                  </Link>
-                </li>
-              ))}
-            {selectedClass !== "all" && selectedType === "all" && (
-              <>
-                {Object.keys(projectData[selectedClass]).map((typeKey) =>
-                  projectData[selectedClass][typeKey].map((project) => (
-                    <li key={project}>
-                      <Link to={`/project/${project}`} className="project-link">
-                        <ImgFetch
-                          src={`projects/${selectedClass}/${typeKey}/${project}`}
-                        />
-                      </Link>
-                    </li>
-                  )),
-                )}
-              </>
-            )}
-          </ul>
-        </div>
+        <ul className="image-gallery">
+          {selectedClass !== "all" &&
+            selectedType !== "all" &&
+            projectData[selectedClass]?.[selectedType]?.map((project) => (
+              <li key={project}>
+                <Link to={`/project/${project}`} className="project-link">
+                  <ImgFetch
+                    src={`projects/${selectedClass}/${selectedType}/${project}`}
+                  />
+                </Link>
+              </li>
+            ))}
+          {selectedClass !== "all" && selectedType === "all" && (
+            <>
+              {Object.keys(projectData[selectedClass]).map((typeKey) =>
+                projectData[selectedClass][typeKey].map((project) => (
+                  <li key={project}>
+                    <Link to={`/project/${project}`} className="project-link">
+                      <ImgFetch
+                        src={`projects/${selectedClass}/${typeKey}/${project}`}
+                      />
+                    </Link>
+                  </li>
+                )),
+              )}
+            </>
+          )}
+        </ul>
       </div>
       <Header dark={true} />
       <Navbar dark={true} />
