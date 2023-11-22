@@ -42,7 +42,7 @@ const Contact = () => {
             <p>Careers</p>
           </div>
         </div>
-        <div className="column right-column">
+        <div className="column-right-column">
           <p>
             For all enquiries, whether you have a project in mind or just want
             to say hello,please get in touch via this form.
@@ -53,6 +53,7 @@ const Contact = () => {
               <label htmlFor="firstName">First Name:</label>
               <input
                 type="text"
+                className="box-color"
                 id="firstName"
                 name="firstName"
                 value={formData.firstName}
@@ -64,6 +65,7 @@ const Contact = () => {
               <label htmlFor="lastName">Last Name:</label>
               <input
                 type="text"
+                className="box-color"
                 id="lastName"
                 name="lastName"
                 value={formData.lastName}
@@ -74,6 +76,7 @@ const Contact = () => {
             <div>
               <label htmlFor="email">Email Address:</label>
               <input
+                className="box-color"
                 type="email"
                 id="email"
                 name="email"
@@ -85,6 +88,7 @@ const Contact = () => {
             <div>
               <label htmlFor="message">Message:</label>
               <textarea
+                className="box-color"
                 id="message"
                 name="message"
                 value={formData.message}
@@ -92,7 +96,9 @@ const Contact = () => {
                 required
               />
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" id="form-button">
+              Submit
+            </button>
           </form>
         </div>
       </div>
