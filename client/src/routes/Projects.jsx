@@ -51,6 +51,7 @@ function Projects() {
         {error && <p>Error: {error.message}</p>}
         <div className="filter-container">
           <div className="class-options">
+            {/*
             <div
               className={`class-option ${
                 selectedClass === "all" ? "selected" : ""
@@ -59,6 +60,7 @@ function Projects() {
             >
               All
             </div>
+				*/}
             {Object.keys(projectData).map((classKey) => (
               <div
                 key={classKey}

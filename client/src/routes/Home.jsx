@@ -36,52 +36,54 @@ function Home() {
         </span>
         <div className="expertise-container">
           <table>
-            <tr>
-              <td>
-                <div className="expertise-title">
-                  <h2>Expertise</h2>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className="expertise-img-container">
-                  <img src={img11} alt="" className="expertise-img" />
-                  <div className="expertise-overlay">
-                    <h3>ARCHITECTURE</h3>
-                    <p className="overlay-desc">
-                      We are passionate about responsible design and the impact
-                      it has on the lives we touch every day.
-                    </p>
+            <tbody>
+              <tr>
+                <td>
+                  <div className="expertise-title">
+                    <h2>Expertise</h2>
                   </div>
-                </div>
-              </td>
-              <td>
-                <div className="expertise-img-container">
-                  <img src={img12} alt="" className="expertise-img" />
-                  <div className="expertise-overlay">
-                    <h3>INTERIOR DESIGN</h3>
-                    <p className="overlay-desc">
-                      We create functional interior design solutions which
-                      address the needs & requirements of our client.
-                    </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="expertise-img-container">
+                    <img src={img11} alt="" className="expertise-img" />
+                    <div className="expertise-overlay">
+                      <h3>ARCHITECTURE</h3>
+                      <p className="overlay-desc">
+                        We are passionate about responsible design and the
+                        impact it has on the lives we touch every day.
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </td>
-              <td>
-                <div className="expertise-img-container">
-                  <img src={img13} alt="" className="expertise-img" />
-                  <div className="expertise-overlay">
-                    <h3>PLANNING</h3>
-                    <p className="overlay-desc">
-                      We are committed to delivering environmental and socially
-                      sustainable communities with a strong sense of design
-                      value on an urban level.
-                    </p>
+                </td>
+                <td>
+                  <div className="expertise-img-container">
+                    <img src={img12} alt="" className="expertise-img" />
+                    <div className="expertise-overlay">
+                      <h3>INTERIOR DESIGN</h3>
+                      <p className="overlay-desc">
+                        We create functional interior design solutions which
+                        address the needs & requirements of our client.
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </td>
-            </tr>
+                </td>
+                <td>
+                  <div className="expertise-img-container">
+                    <img src={img13} alt="" className="expertise-img" />
+                    <div className="expertise-overlay">
+                      <h3>PLANNING</h3>
+                      <p className="overlay-desc">
+                        We are committed to delivering environmental and
+                        socially sustainable communities with a strong sense of
+                        design value on an urban level.
+                      </p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
