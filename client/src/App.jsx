@@ -10,30 +10,30 @@ import NoPage from "./routes/NoPage";
 import Project from "./components/Project/Project";
 
 const Layout = () => {
-  return (
-    <>
-      <div className="content">
-        <Outlet />
-      </div>
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<div className="content">
+				<Outlet />
+			</div>
+			<Footer />
+		</>
+	);
 };
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="careers" element={<Careers />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="project/:id" element={<Project />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<Layout />}>
+					<Route index element={<Home />} />
+					<Route path="projects" element={<Projects />} />
+					<Route path="careers" element={<Careers />} />
+					<Route path="contact" element={<Contact />} />
+					<Route path="project/:id" element={<Project />} />
+					<Route path="*" element={<NoPage />} />
+				</Route>
+			</Routes>
+		</BrowserRouter>
+	);
 }
 export default App;

@@ -14,6 +14,7 @@ dist-ssr
 package-lock.json
 .eslintrc.cjs
 server/assets/
+server/assets.zip
 
 # Editor directories and files
 .vscode/*
